@@ -268,6 +268,10 @@
             </div>
           </div>
 
+          <div id="scanInstructions" class="scan-instructions" hidden>
+            <p>Align barcode in the center of the frame.</p>
+          </div>
+
           <dialog id="cameraResults" class="results">
             <div class="results__actions">
               <custom-clipboard-copy
@@ -379,6 +383,8 @@
         </a-tab-panel>
       </a-tab-group>
     </div>
+
+    <p class="supported-formats" id="supportedFormats"></p>
 
     <script src="./js/register-service-worker.js" type="module"></script>
     <script src="./js/index.js" type="module"></script>
