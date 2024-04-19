@@ -14,10 +14,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/georapbox/barcode-scanner.git"
-  },
   "devDependencies": {
     "@parcel/packager-raw-url": "~2.11.0",
     "@parcel/transformer-webmanifest": "~2.11.0",
