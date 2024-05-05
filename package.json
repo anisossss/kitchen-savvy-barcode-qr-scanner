@@ -7,7 +7,7 @@
     "lint": "eslint . --ext .js",
     "clean": "rimraf dist .parcel-cache",
     "generateSW": "workbox generateSW",
-    "start": "parcel",
+    "start": "parcel serve --host 0.0.0.0",
     "build:parcel": "parcel build --dist-dir=dist --public-url=./",
     "build": "npm-run-all clean build:parcel",
     "postbuild": "npm run generateSW",
@@ -34,8 +34,15 @@
     "barcode-detector": "~2.2.2",
     "idb-keyval": "~6.2.1"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead",
   "optionalDependencies": {
-    "@parcel/watcher-linux-x64-glibc": "~2.4.1"
-  }
+    "@georapbox/a-tab-group": "~2.2.1",
+    "@georapbox/capture-photo-element": "~4.0.1",
+    "@georapbox/clipboard-copy-element": "~3.0.1",
+    "@georapbox/files-dropzone-element": "~1.2.1",
+    "@georapbox/resize-observer-element": "~2.0.0",
+    "@georapbox/web-share-element": "~3.1.0",
+    "barcode-detector": "~2.2.2",
+    "idb-keyval": "~6.2.1"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
